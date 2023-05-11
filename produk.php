@@ -1,3 +1,9 @@
+<?php
+$data = file_get_contents('data.json');
+$menu = json_decode($data, true);
+$menu = $menu["menu"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,7 +26,7 @@
     <header>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
-          <a class="navbar-toggler border-warning badge" type="button" href="index.html">
+          <a class="navbar-toggler border-warning badge" type="button">
             <span class=""><i class="bi bi-house-door"></i></span>
           </a>
           <div class="navbar-toggler logo">
@@ -46,8 +52,8 @@
 
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <a class="nav-link active" href="index.html">Beranda</a>
-              <a class="nav-link active" href="produk.php">Produk</a>
+              <a class="nav-link active" href="#">Beranda</a>
+              <a class="nav-link active" href="#">Produk</a>
               <a class="nav-link active" href="#">Testimoni</a>
             </ul>
 
@@ -65,41 +71,24 @@
           </div>
         </div>
       </nav>
-
-      <div class="container text-center mt-4">
-        <div class="row">
-          <div class="col">
-            <img src="images/heroimage.png" class="img-fluid" alt="logo" />
-          </div>
-          <div class="col bg-warning"></div>
-          <div class="col">
-            <img src="images/heroimage.png" class="img-fluid" alt="logo" />
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffa32c"
-          fill-opacity="1"
-          d="M0,32L60,48C120,64,240,96,360,117.3C480,139,600,149,720,138.7C840,128,960,96,1080,96C1200,96,1320,128,1380,144L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-        ></path>
-      </svg>
     </header>
     <main>
-      <div class="tentang">
-        <div class="judul"><h3>TENTANG KAMI</h3></div>
-        <div class="rincian">
-          <p>
-            SNACK SHOP hadir untuk menyediakan berbagai jenis camilan yang
-            memiliki rasa kekinian dan sedang hits untuk menemani kegiatan
-            kalian dan membuat aktifitas kalian jadi lebih seru. Tidak perlu
-            khawatir dengan harganya karena kami menyediakan camilan yang enak
-            namun dengan harga yang bersahabat. Tunggu apa lagi segera order
-            produk kami di sini atau kamu bisa kunjungi toko offline kami di
-            jalan Olympus Evenue no. 212, kami buka setiap hari dari pukul 08.00
-            WIB sampai 20.00 WIB.
-          </p>
+      <div class="row produk">
+      <?php foreach($menu as $row) : ?>
+        <div class="col-md-4 col-sm-6">
+          <div class="card mb-3">
+            <img src="<?=$row["gambar"]?>" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title"><?=$row["nama"]?></h3>
+              <p class="card-title harga"><?=$row["harga250g"]?></p>
+              <p class="card-title harga"><?=$row["harga500g"]?></p>
+              <p class="card-title harga"><?=$row["harga1000g"]?></p>
+              <p class="card-text"><?=$row["deskripsi"]?></p>
+              <a href="#" class="btn btn-warning">Pesan</a>
+            </div>
+          </div>
         </div>
+      <?php endforeach; ?>    
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -109,7 +98,6 @@
         ></path>
       </svg>
     </main>
-
     <div class="sticky-bottom">
       <footer class="">
         <p>Created with <i class="bi bi-suit-heart-fill"></i> by Friza</p>

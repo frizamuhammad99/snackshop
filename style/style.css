@@ -2,11 +2,19 @@
   font-family: newFont;
   src: url(WendyOne-Regular.ttf);
 }
+.logo-image {
+  width: 1em;
+}
+.nav-link {
+  font-family: newFont;
+}
+/* halaman utama */
 .tentang {
   width: 100%;
   background-color: #ffa32c;
   padding-left: 5em;
   padding-right: 5em;
+  margin: 0;
 }
 .tentang > .judul {
   text-align: center;
@@ -22,15 +30,51 @@
   color: blanchedalmond;
   margin: 0;
 }
+/* produk */
+.produk {
+  background-color: #ffa32c;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.card-title,.card-text,.btn-warning{
+  font-family: newFont;
+}
 footer {
   width: 100%;
   height: 2em;
   background-color: black;
   text-align: center;
-padding: 0.5em;
+  padding: 0.5em;
 }
 footer > p {
   color: blanchedalmond;
   font-family: newFont;
   font-size: 12px;
+}
+
+/* media query */
+@media screen and (max-width: 580px) {
+  .produk {
+  padding-left: 0;
+  padding-right: 0;
+}
+  .col-sm-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .card-img-top{
+    width: 14em;
+  }
+  .card {
+    width: 14em;
+    border-radius: 2em;
+  }
+  .card-img-top {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+  }
+  .harga,.card-text{
+    font-size: 12px;
+  }
 }
