@@ -9,6 +9,18 @@
   font-family: newFont;
 }
 /* halaman utama */
+.div-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1.fluid {
+  text-align: center;
+  font-family: newFont;
+  font-style: italic;
+}
+
 .tentang {
   width: 100%;
   background-color: #ffa32c;

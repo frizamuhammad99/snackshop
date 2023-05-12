@@ -18,9 +18,13 @@
   </head>
   <body>
     <header class="sticky-top">
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-toggler border-warning badge" type="button" href="index.html">
+          <a
+            class="navbar-toggler border-warning badge"
+            type="button"
+            href="index.html"
+          >
             <span class=""><i class="bi bi-house-door"></i></span>
           </a>
           <div class="navbar-toggler border-warning logo">
@@ -70,121 +74,1017 @@
       <div class="row produk">
         <div class="col-md-4 col-sm-6">
           <div class="card mb-3">
-            <img src="images/Basreng.jpg" class="card-img-top" alt="...">
+            <img src="images/Basreng.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h3 class="card-title">Basreng</h3>
               <p class="card-title harga">Rp 10.000 (250g)</p>
               <p class="card-title harga">Rp 15.000 (500g)</p>
               <p class="card-title harga">Rp 25.000 (1000g)</p>
-              <p class="card-text">Baso goreng dengan anekarasa rasa ada balado, pedas, dan asin</p>
-              <a href="#" class="btn btn-warning">Pesan</a>
+              <p class="card-text">
+                Baso goreng dengan anekarasa rasa ada balado, pedas, dan asin
+              </p>
+              <a
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#a"
+                >Pesan</a
+              >
+              <div
+                class="modal fade"
+                id="a"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Detail Pesanan
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label
+                          for="exampleFormControlTextarea1"
+                          class="form-label"
+                          >Masukan alamat rumah</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                      <div class="pilihan-ukuran mb-3">
+                        <label for="form-select">Pilih ukuran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">250g</option>
+                          <option value="2">500g</option>
+                          <option value="3">1000g</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-rasa mb-3">
+                        <label for="form-select">Pilih rasa</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">Asin</option>
+                          <option value="2">Balado</option>
+                          <option value="3">Pedas</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-level mb-3">
+                        <label for="form-select">Pilih level</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">-</option>
+                        </select>
+                      </div>
+
+                      <div class="pilihan-pembayaran">
+                        <label for="form-select">Pilih metode pembayaran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>COD (Bayar di tempat)</option>
+                          <option value="1">DANA</option>
+                          <option value="2">GOPAY</option>
+                          <option value="3">OVO</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Batalkan
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Kirim pesanan
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="col-md-4 col-sm-6">
           <div class="card mb-3">
-            <img src="images/EmpingCaramel.jpg" class="card-img-top" alt="...">
+            <img
+              src="images/EmpingCaramel.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h3 class="card-title">Emping Caramel</h3>
               <p class="card-title harga">Rp 10.000 (250g)</p>
               <p class="card-title harga">Rp 15.000 (500g)</p>
               <p class="card-title harga">Rp 20.000 (1000g)</p>
-              <p class="card-text">Dibuat dari buah melinjo yang dibalur karamel</p>
-              <a href="#" class="btn btn-warning">Pesan</a>
+              <p class="card-text">
+                Dibuat dari buah melinjo yang dibalur karamel
+              </p>
+              <a
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#b"
+                >Pesan</a
+              >
+              <div
+                class="modal fade"
+                id="b"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Detail Pesanan
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label
+                          for="exampleFormControlTextarea1"
+                          class="form-label"
+                          >Masukan alamat rumah</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                      <div class="pilihan-ukuran mb-3">
+                        <label for="form-select">Pilih ukuran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">250g</option>
+                          <option value="2">500g</option>
+                          <option value="3">1000g</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-rasa mb-3">
+                        <label for="form-select">Pilih rasa</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">-</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-level mb-3">
+                        <label for="form-select">Pilih level</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">-</option>
+                        </select>
+                      </div>
+
+                      <div class="pilihan-pembayaran">
+                        <label for="form-select">Pilih metode pembayaran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>COD (Bayar di tempat)</option>
+                          <option value="1">DANA</option>
+                          <option value="2">GOPAY</option>
+                          <option value="3">OVO</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Batalkan
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Kirim pesanan
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="col-md-4 col-sm-6">
           <div class="card mb-3">
-            <img src="images/KacangTelur.jpg" class="card-img-top" alt="...">
+            <img src="images/KacangTelur.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h3 class="card-title">Kacang Telur</h3>
               <p class="card-title harga">Rp 10.000 (250g)</p>
               <p class="card-title harga">Rp 15.000 (500g)</p>
               <p class="card-title harga">Rp 25.000 (1000g)</p>
               <p class="card-text">Kacang yang dibaluri tepung manis</p>
-              <a href="#" class="btn btn-warning">Pesan</a>
+              <a
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#c"
+                >Pesan</a
+              >
+              <div
+                class="modal fade"
+                id="c"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Detail Pesanan
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label
+                          for="exampleFormControlTextarea1"
+                          class="form-label"
+                          >Masukan alamat rumah</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                      <div class="pilihan-ukuran mb-3">
+                        <label for="form-select">Pilih ukuran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">250g</option>
+                          <option value="2">500g</option>
+                          <option value="3">1000g</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-rasa mb-3">
+                        <label for="form-select">Pilih rasa</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">-</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-level mb-3">
+                        <label for="form-select">Pilih level</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">-</option>
+                        </select>
+                      </div>
+
+                      <div class="pilihan-pembayaran">
+                        <label for="form-select">Pilih metode pembayaran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>COD (Bayar di tempat)</option>
+                          <option value="1">DANA</option>
+                          <option value="2">GOPAY</option>
+                          <option value="3">OVO</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Batalkan
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Kirim pesanan
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="col-md-4 col-sm-6">
           <div class="card mb-3">
-            <img src="images/KeripikPisang.jpg" class="card-img-top" alt="...">
+            <img
+              src="images/KeripikPisang.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h3 class="card-title">Keripik Pisang"</h3>
               <p class="card-title harga">Rp 10.000 (250g)</p>
               <p class="card-title harga">Rp 15.000 (500g)</p>
               <p class="card-title harga">Rp 20.000 (1000g)</p>
-              <p class="card-text">Pisang tanduk yang diiris tipis dan digoreng kering</p>
-              <a href="#" class="btn btn-warning">Pesan</a>
+              <p class="card-text">
+                Pisang tanduk yang diiris tipis dan digoreng kering
+              </p>
+              <a
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#d"
+                >Pesan</a
+              >
+              <div
+                class="modal fade"
+                id="d"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Detail Pesanan
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label
+                          for="exampleFormControlTextarea1"
+                          class="form-label"
+                          >Masukan alamat rumah</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                      <div class="pilihan-ukuran mb-3">
+                        <label for="form-select">Pilih ukuran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">250g</option>
+                          <option value="2">500g</option>
+                          <option value="3">1000g</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-rasa mb-3">
+                        <label for="form-select">Pilih rasa</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">Keju</option>
+                          <option value="2">Jagung Bakar</option>
+                          <option value="3">Balado</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-level mb-3">
+                        <label for="form-select">Pilih level</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">-</option>
+                        </select>
+                      </div>
+
+                      <div class="pilihan-pembayaran">
+                        <label for="form-select">Pilih metode pembayaran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>COD (Bayar di tempat)</option>
+                          <option value="1">DANA</option>
+                          <option value="2">GOPAY</option>
+                          <option value="3">OVO</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Batalkan
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Kirim pesanan
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="col-md-4 col-sm-6">
           <div class="card mb-3">
-            <img src="images/KeripikSingkong.jpg" class="card-img-top" alt="...">
+            <img
+              src="images/KeripikSingkong.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h3 class="card-title">Keripik Singkong</h3>
               <p class="card-title harga">Rp 10.000 (250g)</p>
               <p class="card-title harga">Rp 15.000 (500g)</p>
               <p class="card-title harga">Rp 20.000 (1000g)</p>
-              <p class="card-text">Singkong yang diiris tipis dengan aneka rasa Balado, Pedas, Keju, Original</p>
-              <a href="#" class="btn btn-warning">Pesan</a>
+              <p class="card-text">
+                Singkong yang diiris tipis dengan aneka rasa Balado, Pedas,
+                Keju, Asin
+              </p>
+              <a
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#e"
+                >Pesan</a
+              >
+              <div
+                class="modal fade"
+                id="e"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Detail Pesanan
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label
+                          for="exampleFormControlTextarea1"
+                          class="form-label"
+                          >Masukan alamat rumah</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                      <div class="pilihan-ukuran mb-3">
+                        <label for="form-select">Pilih ukuran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">250g</option>
+                          <option value="2">500g</option>
+                          <option value="3">1000g</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-rasa mb-3">
+                        <label for="form-select">Pilih rasa</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">Asin</option>
+                          <option value="2">Keju</option>
+                          <option value="3">Balado</option>
+                          <option value="4">Pedas</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-level mb-3">
+                        <label for="form-select">Pilih level</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">-</option>
+                        </select>
+                      </div>
+
+                      <div class="pilihan-pembayaran">
+                        <label for="form-select">Pilih metode pembayaran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>COD (Bayar di tempat)</option>
+                          <option value="1">DANA</option>
+                          <option value="2">GOPAY</option>
+                          <option value="3">OVO</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Batalkan
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Kirim pesanan
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="col-md-4 col-sm-6">
           <div class="card mb-3">
-            <img src="images/Kripca.jpg" class="card-img-top" alt="...">
+            <img src="images/Kripca.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h3 class="card-title">Kripca</h3>
               <p class="card-title harga">Rp 12.000 (250g)</p>
               <p class="card-title harga">RP 17.000 (500g)</p>
               <p class="card-title harga">Rp 27.000 (1000g)</p>
-              <p class="card-text">Berbahan dasar singkong & tepung tapioka yang diolah dengan bumbu cabai lalu ditipiskan</p>
-              <a href="#" class="btn btn-warning">Pesan</a>
+              <p class="card-text">
+                Berbahan dasar singkong & tepung tapioka yang diolah dengan
+                bumbu cabai.
+              </p>
+              <a
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#f"
+                >Pesan</a
+              >
+              <div
+                class="modal fade"
+                id="f"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Detail Pesanan
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label
+                          for="exampleFormControlTextarea1"
+                          class="form-label"
+                          >Masukan alamat rumah</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                      <div class="pilihan-ukuran mb-3">
+                        <label for="form-select">Pilih ukuran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">250g</option>
+                          <option value="2">500g</option>
+                          <option value="3">1000g</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-rasa mb-3">
+                        <label for="form-select">Pilih rasa</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">Cabai Merah</option>
+                          <option value="2">Cabai Ijo</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-level mb-3">
+                        <label for="form-select">Pilih level</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">Level 1</option>
+                          <option value="2">Level 2</option>
+                          <option value="3">Level 3</option>
+                        </select>
+                      </div>
+
+                      <div class="pilihan-pembayaran">
+                        <label for="form-select">Pilih metode pembayaran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>COD (Bayar di tempat)</option>
+                          <option value="1">DANA</option>
+                          <option value="2">GOPAY</option>
+                          <option value="3">OVO</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Batalkan
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Kirim pesanan
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="col-md-4 col-sm-6">
           <div class="card mb-3">
-            <img src="images/Makaroni.jpg" class="card-img-top" alt="...">
+            <img src="images/Makaroni.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h3 class="card-title">Makaroni</h3>
               <p class="card-title harga">Rp 7.000 (250g)</p>
               <p class="card-title harga">Rp 14.000 (500g)</p>
               <p class="card-title harga">Rp 18.000 (1000g)</p>
-              <p class="card-text">Makaroni yang digoreng dan diberi berbagai bumbu pedas, balado, jagung bakar</p>
-              <a href="#" class="btn btn-warning">Pesan</a>
+              <p class="card-text">
+                Makaroni yang digoreng dan diberi berbagai bumbu pedas, balado,
+                jagung bakar
+              </p>
+              <a
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#g"
+                >Pesan</a
+              >
+              <div
+                class="modal fade"
+                id="g"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Detail Pesanan
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label
+                          for="exampleFormControlTextarea1"
+                          class="form-label"
+                          >Masukan alamat rumah</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                      <div class="pilihan-ukuran mb-3">
+                        <label for="form-select">Pilih ukuran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">250g</option>
+                          <option value="2">500g</option>
+                          <option value="3">1000g</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-rasa mb-3">
+                        <label for="form-select">Pilih rasa</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">Jagung Bakar</option>
+                          <option value="2">Balado</option>
+                          <option value="3">Pedas</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-level mb-3">
+                        <label for="form-select">Pilih level</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">-</option>
+                        </select>
+                      </div>
+
+                      <div class="pilihan-pembayaran">
+                        <label for="form-select">Pilih metode pembayaran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>COD (Bayar di tempat)</option>
+                          <option value="1">DANA</option>
+                          <option value="2">GOPAY</option>
+                          <option value="3">OVO</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Batalkan
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Kirim pesanan
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="col-md-4 col-sm-6">
           <div class="card mb-3">
-            <img src="images/PisangSale.jpg" class="card-img-top" alt="...">
+            <img src="images/PisangSale.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h3 class="card-title">Pisang Sale</h3>
               <p class="card-title harga">Rp 15.000 (250g)</p>
               <p class="card-title harga">Rp 20.000 (500g)</p>
               <p class="card-title harga">Rp 25.000 (1000g)</p>
-              <p class="card-text">Pisang ambon yang diiris tipis dan dikeringkan</p>
-              <a href="#" class="btn btn-warning">Pesan</a>
+              <p class="card-text">
+                Pisang ambon yang diiris tipis dan dikeringkan
+              </p>
+              <a
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#h"
+                >Pesan</a
+              >
+              <div
+                class="modal fade"
+                id="h"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Detail Pesanan
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label
+                          for="exampleFormControlTextarea1"
+                          class="form-label"
+                          >Masukan alamat rumah</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                      <div class="pilihan-ukuran mb-3">
+                        <label for="form-select">Pilih ukuran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">250g</option>
+                          <option value="2">500g</option>
+                          <option value="3">1000g</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-rasa mb-3">
+                        <label for="form-select">Pilih rasa</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">-</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-level mb-3">
+                        <label for="form-select">Pilih level</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">-</option>
+                        </select>
+                      </div>
+
+                      <div class="pilihan-pembayaran">
+                        <label for="form-select">Pilih metode pembayaran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>COD (Bayar di tempat)</option>
+                          <option value="1">DANA</option>
+                          <option value="2">GOPAY</option>
+                          <option value="3">OVO</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Batalkan
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Kirim pesanan
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="col-md-4 col-sm-6">
           <div class="card mb-3">
-            <img src="images/RotiKering.jpg" class="card-img-top" alt="...">
+            <img src="images/RotiKering.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h3 class="card-title">Roti Kering</h3>
               <p class="card-title harga">Rp 10.000 (250g)</p>
               <p class="card-title harga">Rp 15.000 (500g)</p>
               <p class="card-title harga">Rp 20.000 (1000g)</p>
               <p class="card-text">Roti yang diberi gula dan dioven</p>
-              <a href="#" class="btn btn-warning">Pesan</a>
+              <a
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#i"
+                >Pesan</a
+              >
+              <div
+                class="modal fade"
+                id="i"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Detail Pesanan
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label
+                          for="exampleFormControlTextarea1"
+                          class="form-label"
+                          >Masukan alamat rumah</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                      <div class="pilihan-ukuran mb-3">
+                        <label for="form-select">Pilih ukuran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">250g</option>
+                          <option value="2">500g</option>
+                          <option value="3">1000g</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-rasa mb-3">
+                        <label for="form-select">Pilih rasa</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">-</option>
+                        </select>
+                      </div>
+                      <div class="pilihan-level mb-3">
+                        <label for="form-select">Pilih level</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected value="1">-</option>
+                        </select>
+                      </div>
+
+                      <div class="pilihan-pembayaran">
+                        <label for="form-select">Pilih metode pembayaran</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>COD (Bayar di tempat)</option>
+                          <option value="1">DANA</option>
+                          <option value="2">GOPAY</option>
+                          <option value="3">OVO</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Batalkan
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Kirim pesanan
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div> 
+        </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
