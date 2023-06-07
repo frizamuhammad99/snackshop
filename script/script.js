@@ -6,12 +6,19 @@ function searchCardProduct() {
       card.parentElement.parentElement.parentElement.style.display = "flex";
     } else {
       card.parentElement.parentElement.parentElement.style.display = "none";
-    }
-  }
+    };
+  };
+};
+
+function clearInput(){
+  const input = document.querySelector(".input-pencari");
+  input.value = '';
 }
+
 document
   .querySelector(".tombol-pencari")
   .addEventListener("click", function () {
     searchCardProduct();
-  });
+    clearInput();
+});
 
